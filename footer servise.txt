@@ -1,0 +1,40 @@
+div class=container
+            div class=row
+                div class=col-lg-12 text-center
+                    h2 class=section-headingWe doh2
+                    hr class=primary
+                div
+            div
+        div
+        div class=container
+            div class=row
+                div class=col-lg-3 col-md-6 text-center
+                    div class=service-box
+                        i class=fa fa-4x fa-diamond text-primary sr-iconsi
+                        h3Sturdy Templatesh3
+                        p class=text-mutedOur templates are updated regularly so they don't break.p
+                    div
+                div
+                div class=col-lg-3 col-md-6 text-center
+                    div class=service-box
+                        i class=fa fa-4x fa-paper-plane text-primary sr-iconsi
+                        h3Ready to Shiph3
+                        p class=text-mutedYou can use this theme as is, or you can make changes!p
+                    div
+                div
+                div class=col-lg-3 col-md-6 text-center
+                    div class=service-box
+                        i class=fa fa-4x fa-newspaper-o text-primary sr-iconsi
+                        h3Up to Dateh3
+                        p class=text-mutedWe update dependencies to keep things fresh.p
+                    div
+                div
+                div class=col-lg-3 col-md-6 text-center
+                    div class=service-box
+                        i class=fa fa-4x fa-heart text-primary sr-iconsi
+                        h3Made with Loveh3
+                        p class=text-mutedYou have to make your websites with love these days!p
+                    div
+                div
+            div
+        div
