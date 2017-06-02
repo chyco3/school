@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Director | Dashboard</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <meta name="description" content="Developed By M Abdur Rokib Promy">
+    <meta name="keywords" content="Admin, Bootstrap 3, Template, Theme, Responsive">
+    <!-- bootstrap 3.0.2 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- Ionicons -->
+    <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Morris chart -->
+    <link href="css/morris/morris.css" rel="stylesheet" type="text/css" />
+    <!-- jvectormap -->
+    <link href="css/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+    <!-- Date Picker -->
+    <link href="css/datepicker/datepicker3.css" rel="stylesheet" type="text/css" />
+    <!-- fullCalendar -->
+    <!-- <link href="css/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" /> -->
+    <!-- Daterange picker -->
+    <link href="css/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link href="css/iCheck/all.css" rel="stylesheet" type="text/css" />
+    <!-- bootstrap wysihtml5 - text editor -->
+    <!-- <link href="css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" /> -->
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <!-- Theme style -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    
+    <style type="text/css">
+       .btn.btn-success
+        {width: 20%;font-size: 15px;font-weight: 700;text-transform: uppercase;margin: 10px 20px}
+        .btn.btn-danger
+        {width: 20%;font-size: 15px;font-weight: 700;text-transform: uppercase;margin: 10px 20px}
+    </style>
+      </head>
+    <body style="background-color:#fff">
+        <div class="sky-blue-background">
+        <nav class="navbar navbar-inverse">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right dropdown">
+                <li style="font-size:18px;" class="dropbtn"><a href="login.php" style="color:#fff">Login</a>
+                    <div class="dropdown-content">
+                        <a href="#" data-toggle="modal" data-target="#mymodal">Student</a>
+                        <a href="#" data-toggle="modal" data-target="#mymodal1">Supervisor / Tutor</a>
+                        <a href="#" data-toggle="modal" data-target="#mymodal2">School</a>
+                        <a href="#" data-toggle="modal" data-target="#mymodal3">Admin</a>
+                    </div>
+                    <div id="mymodal" class="modal fade" role="dialog" style="color:#000">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="text-align:center;padding: 0px 15px;">
+                                        <h3 style=""></h3>
+                                       <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                       <h2 class="modal-title" style="margin-bottom:30px; color:#000">STUDENT LOGIN</h2>                          
+                                     </div>
+                                    <div class="modal-body">                              
+                                        <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <div id="Enquiry_Form" role="form" class="form-horizontal">
+
+                                                    <div class="form-group">
+
+                                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                            <label>Student Id</label>
+                                                        </div>
+                                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                                            <input name="txtcomment" rows="2" cols="20" id="txtcomment" class="form-control" col="20" placeholder="Student ID">
+
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="form-group">
+
+                                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                            <label>Password</label>
+                                                        </div>
+                                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                                            <input name="txtcomment" rows="2" cols="20" id="txtcomment" class="form-control" col="20" placeholder="Password">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group" style="text-align:center">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                            <a id="btnsubmit" class="  btn-submit submit btn btn-success " href="student.html"><span>Login</span></a>
+                                                            <div id="ValidationSummary1" style="color:Red;display:none;"></div>
+
+                                                            <a id="btnsubmit" class="  btn-submit submit btn btn-danger " href="#"><span>Reset</span></a>
+                                                            <div id="ValidationSummary1" style="color:Red;display:none;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                 
+                                </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                            </div>
+                        </div>
+                    
+                
+             </div>
+                    <div id="mymodal1" class="modal fade" role="dialog" style="color:#000">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="text-align:center;padding: 0px 15px;">
+                                        <h3 style=""></h3>
+                                       <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                       <h2 class="modal-title" style="margin-bottom:30px; color:#000">SUPERVISOR / TUTOR LOGIN</h2>                          
+                                     </div>
+                                    <div class="modal-body">                              
+                                        <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <div id="Enquiry_Form" role="form" class="form-horizontal">
+
+                                                    <div class="form-group">
+
+                                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                            <label>Supervisor / Tutor Id</label>
+                                                        </div>
+                                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                                            <input name="txtcomment" rows="2" cols="20" id="txtcomment" class="form-control" col="20" placeholder="Student ID">
+
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="form-group">
+
+                                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                            <label>Password</label>
+                                                        </div>
+                                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                                            <input name="txtcomment" rows="2" cols="20" id="txtcomment" class="form-control" col="20" placeholder="Password">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group" style="text-align:center">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                            <a id="btnsubmit" class="  btn-submit submit btn btn-success " href="#"><span>Login</span></a>
+                                                            <div id="ValidationSummary1" style="color:Red;display:none;"></div>
+
+                                                            <a id="btnsubmit" class="  btn-submit submit btn btn-danger " href="#"><span>Reset</span></a>
+                                                            <div id="ValidationSummary1" style="color:Red;display:none;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                 
+                                </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                            </div>
+                        </div>
+                    
+                
+             </div>
+                    <div id="mymodal2" class="modal fade" role="dialog" style="color:#000">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="text-align:center;padding: 0px 15px;">
+                                        <h3 style=""></h3>
+                                       <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                       <h2 class="modal-title" style="margin-bottom:30px; color:#000">SCHOOL LOGIN</h2>                          
+                                     </div>
+                                    <div class="modal-body">                              
+                                        <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <div id="Enquiry_Form" role="form" class="form-horizontal">
+
+                                                    <div class="form-group">
+
+                                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                            <label>School Id</label>
+                                                        </div>
+                                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                                            <input name="txtcomment" rows="2" cols="20" id="txtcomment" class="form-control" col="20" placeholder="Student ID">
+
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="form-group">
+
+                                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                            <label>Password</label>
+                                                        </div>
+                                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                                            <input name="txtcomment" rows="2" cols="20" id="txtcomment" class="form-control" col="20" placeholder="Password">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group" style="text-align:center">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                            <a id="btnsubmit" class="  btn-submit submit btn btn-success " href="#"><span>Login</span></a>
+                                                            <div id="ValidationSummary1" style="color:Red;display:none;"></div>
+
+                                                            <a id="btnsubmit" class="  btn-submit submit btn btn-danger " href="#"><span>Reset</span></a>
+                                                            <div id="ValidationSummary1" style="color:Red;display:none;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                 
+                                </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                            </div>
+                        </div>
+                    
+                
+             </div>
+                    <div id="mymodal2" class="modal fade" role="dialog" style="color:#000">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="text-align:center;padding: 0px 15px;">
+                                        <h3 style=""></h3>
+                                       <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                       <h2 class="modal-title" style="margin-bottom:30px; color:#000">ADMIN LOGIN</h2>                          
+                                     </div>
+                                    <div class="modal-body">                              
+                                        <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <div id="Enquiry_Form" role="form" class="form-horizontal">
+
+                                                    <div class="form-group">
+
+                                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                            <label>Admin Id</label>
+                                                        </div>
+                                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                                            <input name="txtcomment" rows="2" cols="20" id="txtcomment" class="form-control" col="20" placeholder="Admin ID">
+
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="form-group">
+
+                                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                            <label>Password</label>
+                                                        </div>
+                                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                                            <input name="txtcomment" rows="2" cols="20" id="txtcomment" class="form-control" col="20" placeholder="Password">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group" style="text-align:center">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                            <a id="btnsubmit" class="  btn-submit submit btn btn-success " href="#"><span>Login</span></a>
+                                                            <div id="ValidationSummary1" style="color:Red;display:none;"></div>
+
+                                                            <a id="btnsubmit" class="  btn-submit submit btn btn-danger " href="#"><span>Reset</span></a>
+                                                            <div id="ValidationSummary1" style="color:Red;display:none;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                 
+                                </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                            </div>
+                        </div>
+                    
+                
+             </div>
+                  </li>  
+                  <li><a href="#" style="color:#fff">Tel No : 12345678 | abc@xyz.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        </div>
+        <section style="background-color:#fff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <a class="navbar-brand" href="index"><img src="img/logo.jpg" alt="LOGO" class="img-responsive"></a>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section style="min-height:400px;">
+    <div class="sky-blue-background padding-top">
+	<div class="row">
+		<!-- Carousel -->
+    	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+			  	<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			</ol>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+			    <div class="item active">
+			    	<img src="img/1.jpg" alt="First slide">
+                    <!-- Static Header -->
+                    
+			    </div>
+			    <div class="item">
+			    	<img src="img/2.jpg" alt="Second slide">
+			    	
+			    </div>
+			    <div class="item">
+			    	<img src="img/2.jpg" alt="Third slide">
+			    	
+			    </div>
+			</div>
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+		    	<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+		    	<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div><!-- /carousel -->
+	</div>
+    </div>    
+</section>
+        <section style="background-color:#fff;min-height:400px;">
+    <div class="sky-blue-background padding-top">
+        <div class="container">
+            <div class="col-lg-12">
+            	<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <h3>About University</h3>
+                    <p style="text-align:justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <h3>About Us</h3>
+                    <p style="text-align:justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <h3>What we Do</h3>
+                    <p style="text-align:justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+                </div>
+            </div>
+        </div>
+    </div>    
+</section>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+
+        <!-- jQuery UI 1.10.3 -->
+        <script src="js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- daterangepicker -->
+        <script src="js/plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
+
+        <script src="js/plugins/chart.js" type="text/javascript"></script>
+    </body>
+</html>

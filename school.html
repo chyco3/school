@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Director | Dashboard</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <meta name="description" content="Developed By M Abdur Rokib Promy">
+    <meta name="keywords" content="Admin, Bootstrap 3, Template, Theme, Responsive">
+    <!-- bootstrap 3.0.2 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- Ionicons -->
+    <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Morris chart -->
+    <link href="css/morris/morris.css" rel="stylesheet" type="text/css" />
+    <!-- jvectormap -->
+    <link href="css/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+    <!-- Date Picker -->
+    <link href="css/datepicker/datepicker3.css" rel="stylesheet" type="text/css" />
+    <!-- fullCalendar -->
+    <!-- <link href="css/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" /> -->
+    <!-- Daterange picker -->
+    <link href="css/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link href="css/iCheck/all.css" rel="stylesheet" type="text/css" />
+    <!-- bootstrap wysihtml5 - text editor -->
+    <!-- <link href="css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" /> -->
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <!-- Theme style -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+          <style type="text/css">
+              .btn.btn-success
+        {margin: 10px 20px}
+               .panel > .table-responsive
+              {
+                  overflow-x: auto;
+              }
+          </style>
+      </head>
+      <body class="skin-black">
+        <!-- header logo: style can be found in header.less -->
+        <header class="header">
+            <a href="index.html" class="logo">
+                Director
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div style="float:right;padding:10px">
+                    <a href="#"> Logout</a>
+                </div>
+                
+                    </nav>
+                </header>
+                <div class="wrapper row-offcanvas row-offcanvas-left">
+                    <!-- Left side column. contains the logo and sidebar -->
+                    <aside class="left-side sidebar-offcanvas">
+                        <!-- sidebar: style can be found in sidebar.less -->
+                        <section class="sidebar">
+                            <ul class="sidebar-menu ">
+                                <li class="active">
+                                    <a href="#home" data-toggle="tab" >
+                                        <i class="fa fa-user"></i> <span>School Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#about" data-toggle="tab" >
+                                        <i class="fa fa-dashboard"></i> <span>Allocation Student</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#Days" data-toggle="tab" >
+                                        <i class="fa fa-calendar fa fa-comment"></i> <span>Message</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                        <!-- /.sidebar -->
+                    </aside>
+
+                    <aside class="right-side">
+
+                <section class="content">
+                    
+                    
+                    <div class="row">
+                        <div class="col-lg-12">
+                        <!--tab nav start-->
+                        <section class="panel general">
+                            <div class="panel-body">
+                                <div class="tab-content">
+                                    <div id="home" class="tab-pane active">
+                                        
+                    <div class="col-lg-12">
+                          <section class="panel">
+                              <header class="panel-heading">
+                                  Student Detail
+                              </header>
+                              <div class="panel-body">
+                                  <div class="user-panel" style="padding:bottom:30px;">
+                                        <div class="pull-left image" style="float:left !important;width:40%">
+                                            <img src="img/avatar3.png" class="img-circle" alt="User Image" style="height:25%;width:25%;">
+                                        </div>
+                                        
+                                  </div>
+                                  <form class="form-horizontal" role="form">
+                                      <div class="form-group">
+                                          <label for="inputPassword1" class="col-lg-3 col-sm-12 control-label">Address</label>
+                                          <div class="col-lg-6">
+                                              <textarea class="form-control" id="inputPassword1" placeholder="Address"></textarea>
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="inputPassword1" class="col-lg-3 col-sm-12 control-label">Contact Details</label>
+                                          <div class="col-lg-6">
+                                              <input type="tel" class="form-control" id="inputPassword1" placeholder="Contact Details">
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="inputPassword1" class="col-lg-3 col-sm-12 control-label">Travel Convience</label>
+                                          <div class="col-lg-6">
+                                              <input type="email" class="form-control" id="inputEmail1" placeholder="Travel Convience">
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="inputPassword1" class="col-lg-3 col-sm-12 control-label">Change Password</label>
+                                          <div class="col-lg-6">
+                                              <input type="date" class="form-control" id="inputEmail1" placeholder="Change Password">
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <div class="col-lg-offset-3 col-lg-10">
+                                              <button type="submit" class="btn btn-warning">Update</button>
+                                         
+                                              <button type="submit" class="btn btn-success">Save</button>
+                                          </div>
+                                      </div>
+                                  </form>
+                              </div>
+                          </section>
+                      </div>
+                                    </div>
+                                    <div id="about" class="tab-pane">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="panel">
+
+                                                    <div class="panel-body table-responsive">
+                                                        <div class="box-tools m-b-15">
+                                                            <div class="input-group">
+                                                                <input type="text" name="table_search" class="form-control input-sm pull-right" style="width: 150px;" placeholder="Search"/>
+                                                                <div class="input-group-btn">
+                                                                    <button class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <table class="table table-hover table-scrollable">
+                                                            <tr>
+                                                                <th>Placement</th>
+                                                                <th>Student Name</th>
+                                                                <th>Surname</th>
+                                                                <th>Course</th>
+                                                                <th>Student Address</th>
+                                                                <th>Date Of Visit</th>
+                                                                <th>Supervisor</th>
+                                                                <th>Supervisor Contact</th>
+                                                                <th>Other Supervisor</th>
+                                                                <th>Other Supervisor Contact</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </table>
+                                                    </div><!-- /.box-body -->
+                                                </div><!-- /.box -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="Days" class="tab-pane">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="panel">
+                                                    <header class="panel-heading">
+                                                      Student Details
+                                                  </header>
+                                                    <div class="panel-body table-responsive">
+                                                        <div class="box-tools m-b-15" style="padding:bottom:5px;">
+                                                            <div class="input-group" style="float:left;">
+                                                                <select class="form-control input-sm m-b-10">
+                                                                    <option>All Students</option>
+                                                                    <option>Batch 1</option>
+                                                                    <option>Batch 2</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="input-group">
+                                                                <input type="text" name="table_search" class="form-control input-sm pull-right" style="width: 150px;" placeholder="Search"/>
+                                                                <div class="input-group-btn">
+                                                                    <button class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <table class="table table-hover" >
+                                                            <tr>
+                                                                <th>ID</th>
+                                                                <th>Photo</th>
+                                                                <th>Name</th>
+                                                                <th>Surname</th>
+                                                                <th>Reg No</th>
+                                                                <th>Address</th>
+                                                                <th>Mobile</th>
+                                                                <th>Course</th>
+                                                                <th>Missed Days</th>
+                                                                <th>Supervisors</th>
+                                                                <th>Allocated School</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>183</td>
+                                                                <td>Image</td>
+                                                                <td>john</td>
+                                                                <td>doe</td>
+                                                                <td>213616546</td>
+                                                                <td>xyz Street,NewYork</td>
+                                                                <td>(+91)1234567891</td>
+                                                                <td>hflfhlf</td>
+                                                                <td>5</td>
+                                                                <td>ABC</td>
+                                                                <td>kgkhgk</td>
+                                                            </tr>
+
+                                                        </table>
+                                                    </div><!-- /.box-body -->
+                                                </div><!-- /.box -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </section>
+                        <!--tab nav start-->
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div><!-- ./wrapper -->
+
+
+        <!-- jQuery 2.0.2 -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- Director App -->
+        <script src="js/Director/app.js" type="text/javascript"></script>
+    </body>
+</html>
